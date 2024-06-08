@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import heroImg from '../assets/images/hero-img.png'
+import { Container } from '../styles/Container';
+import { NavLink } from 'react-router-dom';
 
 const MainSection = styled.section`
   display: flex;
@@ -9,6 +11,25 @@ const MainSection = styled.section`
 
 const TextContent = styled.div`
   flex: 1;
+
+  a{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 13px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #14279b;
+    border: 2.5px solid #14279b;
+    text-decoration: none;
+
+  &:hover {
+    background: #14279b;
+    color: #fff;
+  }
+  }
 `;
 
 const Heading = styled.h1`
@@ -26,26 +47,6 @@ const SubHeading = styled.p`
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
-`;
-
-const Button = styled.a`
-
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 13px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #14279b;
-    border: 2.5px solid #14279b;
-    text-decoration: none;
-
-  &:hover {
-    background: #14279b;
-    color: #fff;
-  }
 `;
 
 const ImageContent = styled.div`
@@ -71,18 +72,21 @@ const HeroImage = styled.img`
 `;
 
 const Banner = () => {
-    return (
-        <MainSection>
-            <TextContent>
-                <Heading>Grow your business <br></br>with Akeshya</Heading>
-                <SubHeading>We are team of talented website designers, developers & digital marketeers</SubHeading>
-                <Button href="#">Get Started</Button>
-            </TextContent>
-            <ImageContent>
-                <HeroImage src={heroImg} className='animate' alt="Business illustration" />
-            </ImageContent>
-        </MainSection>
-    );
+  return (
+    <Container>
+      <MainSection>
+        <TextContent>
+          <Heading>Grow your business <br></br>with Akeshya</Heading>
+          <SubHeading>We are team of talented website designers, developers & digital marketeers</SubHeading>
+          <NavLink to="/">Get Started</NavLink>
+        </TextContent>
+        <ImageContent>
+          <HeroImage src={heroImg} className='animate' alt="Business illustration" />
+        </ImageContent>
+      </MainSection>
+    </Container>
+
+  );
 };
 
 export default Banner;

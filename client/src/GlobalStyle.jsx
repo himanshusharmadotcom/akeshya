@@ -21,6 +21,9 @@ export const GlobalStyle = createGlobalStyle`
     src: url(${raleway});
   }
   
+  body{
+    font-family: "Open Sans", sans-serif;
+  }
 
   h1, h2, h3, h4, h5, h6{
     font-family: 'ralewayFont', sans-serif;
@@ -34,21 +37,17 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     background: #14279b;
-    padding: 8px 25px;
+    padding: 14px 25px;
     border-radius: 50px;
     color: #fff!important;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-decoration: none;
 
     &:hover {
       background: #2383c4;
     }
   }
-
-  .container {
-    max-width: 89%;
-    margin: 0 auto;
-  }
-
+  
 `;
