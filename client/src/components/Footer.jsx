@@ -13,6 +13,11 @@ const FooterInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(max-width: 992px){
+    flex-direction: column;  
+    gap: 20px;
+  }
 `;
 
 const LeftSpan = styled.p`
@@ -33,22 +38,22 @@ const RightSpan = styled.div`
 `;
 
 const Footer = () => {
-    return (
-        <FooterContainer>
-            <Container>
-                <FooterInner>
-                    <LeftSpan>
-                        &copy; Copyright <strong>Akesyha</strong>. All Rights Reserved
-                    </LeftSpan>
-                    <RightSpan>
-                        <NavLink to="/">Terms and conditions</NavLink>
-                        <NavLink to="/">Refund policy</NavLink>
-                        <NavLink to="/">Privacy policy</NavLink>
-                    </RightSpan>
-                </FooterInner>
-            </Container>
-        </FooterContainer>
-    );
+  return (
+    <FooterContainer>
+      <Container>
+        <FooterInner>
+          <LeftSpan>
+            &copy; Copyright <strong>Akesyha</strong>. All Rights Reserved
+          </LeftSpan>
+          <RightSpan>
+            <NavLink to="/">Terms and conditions</NavLink>
+            <NavLink to="/">Refund policy</NavLink>
+            <NavLink to="/">Privacy policy</NavLink>
+          </RightSpan>
+        </FooterInner>
+      </Container>
+    </FooterContainer>
+  );
 };
 
 export default Footer;

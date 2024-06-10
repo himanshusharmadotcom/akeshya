@@ -21,8 +21,6 @@ const FeaturesContainer = styled.div`
   background: #fff;
 `;
 
-const FeaturesTitle = styled.h2``;
-
 const FeaturesSubtitle = styled.p`
   margin-bottom: 50px;
   color: #666;
@@ -33,6 +31,7 @@ const FeaturesGrid = styled.div`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const FeatureItem = styled.div`
@@ -56,6 +55,18 @@ const FeatureItem = styled.div`
     text-decoration: none;
     font-weight: 500;
     display: flex;
+  }
+
+  @media(max-width: 992px){
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media(max-width: 768px){
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+   @media(max-width: 576px){
+    flex-basis: 100%;
   }
 
 `;

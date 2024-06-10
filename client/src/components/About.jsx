@@ -13,6 +13,11 @@ const AboutSection = styled.section`
 const TextGroup = styled.div`
   display: flex;
   gap: 20px;
+
+  @media(max-width: 992px){
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 const TextContent = styled.div`

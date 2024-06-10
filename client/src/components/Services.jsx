@@ -11,9 +11,6 @@ const ServicesContainer = styled.div`
   background: #fff;
 `;
 
-const Title = styled.h2`
-`;
-
 const Subtitle = styled.p`
   margin-bottom: 50px;
   color: #666;
@@ -55,6 +52,14 @@ const ServiceItem = styled.div`
     border-radius: unset;
     background: ${props => props.theme.colors.primaryColor};
     z-index: -1;
+  }
+
+  @media(max-width: 992px){
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media(max-width: 768px){
+    flex-basis: 100%;
   }
 `;
 

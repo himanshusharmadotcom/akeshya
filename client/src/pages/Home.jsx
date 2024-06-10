@@ -12,6 +12,7 @@ import LogoSection from "../components/LogoSection";
 import { useEffect, useRef } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import GoToTop from "../components/GoToTop";
 
 const Home = () => {
 
@@ -36,6 +37,7 @@ const Home = () => {
       <Process />
       <CoreFeatures />
       <ContactUs ref={contactSectionRef} />
+      <GoToTop />
       <Footer />
     </>
   )

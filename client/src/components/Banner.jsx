@@ -7,6 +7,12 @@ import { NavLink } from 'react-router-dom';
 const MainSection = styled.section`
   display: flex;
   align-items: center;
+
+  @media(max-width: 992px){
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
 `;
 
 const TextContent = styled.div`
@@ -30,6 +36,10 @@ const TextContent = styled.div`
     color: #fff;
   }
   }
+
+  @media(max-width: 992px){
+    order: 2;
+  }
 `;
 
 const Heading = styled.h1`
@@ -52,6 +62,10 @@ const SubHeading = styled.p`
 const ImageContent = styled.div`
   flex: 1;
   text-align: center;
+
+  @media(max-width: 992px){
+    order: 1;
+  }
 `;
 
 

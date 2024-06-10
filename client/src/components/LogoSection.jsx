@@ -18,6 +18,7 @@ const LogoSectionInner = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 const Logo = styled.img`
@@ -30,6 +31,7 @@ const Logo = styled.img`
   &:hover{
     filter: none;
   }
+
 `;
 
 const LogoSection = () => {

@@ -28,12 +28,15 @@ const ProcessItem = styled.div`
     background: #f6f6f6;
     padding: 30px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    transition: ease-in-out 0.4s;
+    transition: background 0.3s!important;
     border-radius: 5px;
 
     &:hover{
-        background-color: ${props => props.theme.colors.primaryColor};
+        background: ${props => props.theme.colors.primaryColor};
+    }
+
+    @media(max-width: 768px){
+      flex-basis: 100%;
     }
 `;
 

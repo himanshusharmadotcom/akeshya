@@ -19,6 +19,10 @@ const ContactDetails = styled.div`
     text-align: left;
     gap: 20px;
     padding: 50px 0;
+
+    @media(max-width: 992px){
+      flex-direction: column;
+    }
 `;
 
 const Title = styled.h3`
@@ -105,7 +109,7 @@ const ContactUs = forwardRef((props, ref) => {
                     </FirstSpan>
                     <SecondSpan data-aos="fade-up" data-aos-delay="200">
                         <ContactItem>
-                            <GrLocation style={{ "fontSize": "44px" }} />
+                            <GrLocation style={{ "fontSize": window.innerWidth >= 992 ? 44 : 24 }} />
                             <p>26-2-789, 7th Street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
                         </ContactItem>
                         <ContactItem>
