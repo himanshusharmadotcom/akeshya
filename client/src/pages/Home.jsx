@@ -9,10 +9,19 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import LogoSection from "../components/LogoSection";
-import { useRef } from "react";
-
+import { useEffect, useRef } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Home = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const aboutSectionRef = useRef(null);
   const serviceSectionRef = useRef(null);
   const contactSectionRef = useRef(null);

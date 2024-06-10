@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import heroImg from '../assets/images/hero-img.png'
 import { Container } from '../styles/Container';
@@ -72,15 +72,16 @@ const HeroImage = styled.img`
 `;
 
 const Banner = () => {
+
   return (
     <Container>
       <MainSection>
         <TextContent>
-          <Heading>Grow your business <br></br>with Akeshya</Heading>
-          <SubHeading>We are team of talented website designers, developers & digital marketeers</SubHeading>
-          <NavLink to="/">Get Started</NavLink>
+          <Heading data-aos="fade-up">Grow your business <br></br>with Akeshya</Heading>
+          <SubHeading data-aos="fade-up" data-aos-delay="400">We are team of talented website designers, developers & digital marketeers</SubHeading>
+          <NavLink to="/" data-aos="fade-up" data-aos-delay="600">Get Started</NavLink>
         </TextContent>
-        <ImageContent>
+        <ImageContent data-aos="zoom-in">
           <HeroImage src={heroImg} className='animate' alt="Business illustration" />
         </ImageContent>
       </MainSection>

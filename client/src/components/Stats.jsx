@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { VscSmiley } from "react-icons/vsc";
 import { BsJournalRichtext } from "react-icons/bs";
@@ -6,6 +6,8 @@ import { GoClock } from "react-icons/go";
 import { BsGlobe2 } from "react-icons/bs";
 import statsImg from '../assets/images/counts-img.svg';
 import { Container } from '../styles/Container';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 
 // Define styled components
 const StatsContainer = styled.div`
@@ -41,14 +43,21 @@ const StatItem = styled.div`
     gap: 22px;
     color: #1f3c9e;
     flex-basis: calc((100% - 30px) / 2);
+
+    span{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000;
+    }
 `;
 
-const StatValue = styled.div`
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #000;
-`;
+// const StatValue = styled.div`
+//   font-size: 36px;
+//   font-weight: bold;
+//   margin-bottom: 10px;
+//   color: #000;
+// `;
 
 const StatLabel = styled.div`
     font-family: "Raleway", sans-serif;
@@ -64,40 +73,51 @@ const StatIcon = styled.div`
 
 // Main Stats component
 const Stats = () => {
+
+    const [counterOn, setCounterOn] = useState(false);
+
     return (
         <Container>
             <StatsContainer>
-                <LeftSpan>
+                <LeftSpan data-aos="flip-up" data-aos-delay="150">
                     <StatsImage>
                         <img src={statsImg} alt="Stat Image" />
                     </StatsImage>
                 </LeftSpan>
-                <RightSpan>
+                <RightSpan data-aos="flip-down" data-aos-delay="300">
                     <StatItem>
                         <StatIcon><VscSmiley /></StatIcon>
                         <div>
-                            <StatValue>3835039</StatValue>
+                            <ScrollTrigger onEnter={() => setCounterOn(true)}>
+                                {counterOn && <CountUp start={0} end={3835039} duration={3} />}
+                            </ScrollTrigger>
                             <StatLabel><strong>Organic Reach</strong> (Global)</StatLabel>
                         </div>
                     </StatItem>
                     <StatItem>
                         <StatIcon><BsJournalRichtext /></StatIcon>
                         <div>
-                            <StatValue>85</StatValue>
+                            <ScrollTrigger onEnter={() => setCounterOn(true)}>
+                                {counterOn && <CountUp start={0} end={85} duration={3} />}
+                            </ScrollTrigger>
                             <StatLabel><strong>Campaigns</strong></StatLabel>
                         </div>
                     </StatItem>
                     <StatItem>
                         <StatIcon><GoClock /></StatIcon>
                         <div>
-                            <StatValue>14081</StatValue>
+                            <ScrollTrigger onEnter={() => setCounterOn(true)}>
+                                {counterOn && <CountUp start={0} end={14081} duration={3} />}
+                            </ScrollTrigger>
                             <StatLabel><strong>Watch Hours</strong> (Asia)</StatLabel>
                         </div>
                     </StatItem>
                     <StatItem>
                         <StatIcon><BsGlobe2 /></StatIcon>
                         <div>
-                            <StatValue>17</StatValue>
+                            <ScrollTrigger onEnter={() => setCounterOn(true)}>
+                                {counterOn && <CountUp start={0} end={17} duration={3} />}
+                            </ScrollTrigger>
                             <StatLabel><strong>Excellent CTR %</strong> (Asia)</StatLabel>
                         </div>
                     </StatItem>

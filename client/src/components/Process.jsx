@@ -9,8 +9,6 @@ const ProcessContainer = styled.div`
   background: #fff;
 `;
 
-const ProcessTitle = styled.h2``;
-
 const ProcessSubtitle = styled.p`
   margin-bottom: 50px;
   color: #666;
@@ -62,28 +60,30 @@ const Process = () => {
   return (
     <Container>
       <ProcessContainer>
-        <MainHeading>OUR PROCESS</MainHeading>
-        <ProcessSubtitle>Over the years we’ve evolved a tested method for attaining achievement for each one of our clients.</ProcessSubtitle>
+        <div data-aos="fade-up">
+          <MainHeading>OUR PROCESS</MainHeading>
+          <ProcessSubtitle>Over the years we’ve evolved a tested method for attaining achievement for each one of our clients.</ProcessSubtitle>
+        </div>
         <ProcessGrid>
-          <ProcessItem>
+          <ProcessItem data-aos="fade-up" data-aos-delay="100">
             <ProcessStepTitle>1. Planning</ProcessStepTitle>
             <ProcessStepDescription>
               We help you turn all of your ideas into a digital product that meets all of your requirements. We begin each project by determining its scope and needs. This is done by collaborating closely with you to ensure that we’re all on the same page.
             </ProcessStepDescription>
           </ProcessItem>
-          <ProcessItem>
+          <ProcessItem data-aos="fade-up" data-aos-delay="200">
             <ProcessStepTitle>2. Design</ProcessStepTitle>
             <ProcessStepDescription>
               We build our websites carefully through a series of workshops, wire-framing, and user experience (UX) sessions, resulting in a site that reinforces trust, conveys important brand messaging, and provides a return on innovation.
             </ProcessStepDescription>
           </ProcessItem>
-          <ProcessItem>
+          <ProcessItem data-aos="fade-up" data-aos-delay="300">
             <ProcessStepTitle>3. Development</ProcessStepTitle>
             <ProcessStepDescription>
               We provide extensive front-end and back-end development that allows your idea to stand alone. Our in-house developers work side-by-side with the artistic team to seek out natural breakpoints inside the content and order practicality based on acknowledged statistics.
             </ProcessStepDescription>
           </ProcessItem>
-          <ProcessItem>
+          <ProcessItem data-aos="fade-up" data-aos-delay="400">
             <ProcessStepTitle>4. Marketing</ProcessStepTitle>
             <ProcessStepDescription>
               We come up with ideas and campaigns to help your business prosper online. Our campaigns and virtual approach have a verified track record of accomplishing brilliant results, gathering new leads and site visitors in your website and assisting them convert.

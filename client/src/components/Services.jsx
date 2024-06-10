@@ -99,10 +99,12 @@ const Services = forwardRef((props, ref) => {
   return (
     <Container ref={ref}>
       <ServicesContainer>
-        <MainHeading>SERVICES</MainHeading>
-        <Subtitle>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.</Subtitle>
+        <div data-aos="fade-up">
+          <MainHeading>SERVICES</MainHeading>
+          <Subtitle>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.</Subtitle>
+        </div>
         <ServicesGrid>
-          <ServiceItem>
+          <ServiceItem data-aos="fade-up" data-aos-delay="100">
             <IconWrapper>
               <FaPalette />
             </IconWrapper>
@@ -111,7 +113,7 @@ const Services = forwardRef((props, ref) => {
               Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.
             </ServiceDescription>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem data-aos="fade-up" data-aos-delay="200">
             <IconWrapper>
               <FaCode />
             </IconWrapper>
@@ -120,7 +122,7 @@ const Services = forwardRef((props, ref) => {
               Our development team can construct platforms to help your business thrive by creating powerful customized solutions tailored to your particular requirements. Akeshya makes use of established and effective web development tools.
             </ServiceDescription>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem data-aos="fade-up" data-aos-delay="300">
             <IconWrapper>
               <FaBullhorn />
             </IconWrapper>
@@ -129,7 +131,7 @@ const Services = forwardRef((props, ref) => {
               A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.
             </ServiceDescription>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem data-aos="fade-up" data-aos-delay="400">
             <IconWrapper>
               <FaHeadset />
             </IconWrapper>

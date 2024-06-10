@@ -37,12 +37,12 @@ const LogoSection = () => {
         <LogoParent>
             <Container>
                 <LogoSectionInner>
-                    <Logo src={client1} alt="Logo 1" />
-                    <Logo src={client2} alt="Logo 2" />
-                    <Logo src={client3} alt="Logo 3" />
-                    <Logo src={client4} alt="Logo 4" />
-                    <Logo src={client5} alt="Logo 5" />
-                    <Logo src={client6} alt="Logo 5" />
+                    <Logo src={client1} alt="Logo 1" data-aos="zoom-in"/>
+                    <Logo src={client2} alt="Logo 2" data-aos="zoom-in" data-aos-delay="100"/>
+                    <Logo src={client3} alt="Logo 3" data-aos="zoom-in" data-aos-delay="200"/>
+                    <Logo src={client4} alt="Logo 4" data-aos="zoom-in" data-aos-delay="300"/>
+                    <Logo src={client5} alt="Logo 5" data-aos="zoom-in" data-aos-delay="400"/>
+                    <Logo src={client6} alt="Logo 5" data-aos="zoom-in" data-aos-delay="500"/>
                 </LogoSectionInner>
             </Container>
         </LogoParent>

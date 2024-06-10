@@ -81,9 +81,11 @@ const CoreFeatures = () => {
   return (
     <Container>
       <FeaturesContainer>
-        <MainHeading>OUR CORE FEATURES</MainHeading>
-        <FeaturesSubtitle>Akesyha is a forward-thinking and intelligent design firm that is technically and creatively capable of transforming your brand into its best digital self. Our approach to design and development results in compelling, engaging branding and immersive digital experiences that provide a value for money.</FeaturesSubtitle>
-        <FeaturesGrid>
+        <div data-aos="fade-up">
+          <MainHeading>OUR CORE FEATURES</MainHeading>
+          <FeaturesSubtitle>Akesyha is a forward-thinking and intelligent design firm that is technically and creatively capable of transforming your brand into its best digital self. Our approach to design and development results in compelling, engaging branding and immersive digital experiences that provide a value for money.</FeaturesSubtitle>
+        </div>
+        <FeaturesGrid data-aos="fade-up" data-aos-delay="100">
           {features.map((feature, index) => (
             <FeatureItem key={index}>
               <NavLink to="/"><Icon>{feature.icon}</Icon> &nbsp;&nbsp;{feature.title}</NavLink>

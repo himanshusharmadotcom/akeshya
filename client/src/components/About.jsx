@@ -56,9 +56,9 @@ const About = forwardRef((props, ref) => {
     return (
         <Container ref={ref}>
             <AboutSection>
-                <MainHeading>ABOUT US</MainHeading>
+                <MainHeading data-aos="fade-up">ABOUT US</MainHeading>
                 <TextGroup>
-                    <TextContent>
+                    <TextContent data-aos="fade-up" data-aos-delay="150">
                         <Paragraph>
                             We are Akeshya, a firm that specializes in web design and marketing. We help transform ideas into reality with a team of passionate graphic designers, web developers, and seasoned marketing advisors.
                         </Paragraph>
@@ -72,7 +72,7 @@ const About = forwardRef((props, ref) => {
                             <strong><IoCheckmarkDone className="icons" /></strong> Our day-to-day work is to solve your problems utilizing the most up-to-date, practical adaptive technology, and we have a lot of fun doing it.
                         </Paragraph>
                     </TextContent>
-                    <TextContent>
+                    <TextContent data-aos="fade-up" data-aos-delay="300">
                         <Paragraph>
                             We're professional, but we're also friendly, and we'll always pay attention to your concerns. We expect to work with innovative people that have an open mind and are dedicated to making every idea a reality. We want to hear from you if you're interested in SEO, have Web Development ideas, or require a graphic designer who can match your goals.
                         </Paragraph>

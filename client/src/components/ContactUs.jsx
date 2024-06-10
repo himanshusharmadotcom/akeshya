@@ -97,13 +97,13 @@ const ContactUs = forwardRef((props, ref) => {
     return (
         <Container ref={ref}>
             <ContactContainer>
-                <MainHeading>Contact Us</MainHeading>
+                <MainHeading data-aos="fade-up">Contact Us</MainHeading>
                 <ContactDetails>
-                    <FirstSpan>
+                    <FirstSpan data-aos="fade-up" data-aos-delay="100">
                         <Title>Akeshya</Title>
                         <Subtitle>Designers, developers & marketeers capable of delivering solutions according to your needs.</Subtitle>
                     </FirstSpan>
-                    <SecondSpan>
+                    <SecondSpan data-aos="fade-up" data-aos-delay="200">
                         <ContactItem>
                             <GrLocation style={{ "fontSize": "44px" }} />
                             <p>26-2-789, 7th Street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
@@ -117,7 +117,7 @@ const ContactUs = forwardRef((props, ref) => {
                             <p>+91 94942 40922</p>
                         </ContactItem>
                     </SecondSpan>
-                    <ThirdSpan>
+                    <ThirdSpan data-aos="fade-up" data-aos-delay="300">
                         <form>
                             <InputField type="text" placeholder="Your Name" />
                             <InputField type="email" placeholder="Your Email" />
