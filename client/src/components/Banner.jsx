@@ -107,7 +107,7 @@ const Banner = () => {
     <Container>
       <MainSection>
         <TextContent>
-          <Heading data-aos="fade-up">Groww your business with Akeshya</Heading>
+          <Heading data-aos="fade-up">Grow your business with Akeshya</Heading>
           <SubHeading data-aos="fade-up" data-aos-delay="400">We are team of talented website designers, developers & digital marketeers</SubHeading>
           <NavLink to="/" data-aos="fade-up" data-aos-delay="600">Get Started</NavLink>
         </TextContent>
