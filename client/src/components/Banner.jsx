@@ -48,6 +48,11 @@ const Heading = styled.h1`
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
+
+    @media(max-width: 768px){
+        font-size: 28px;
+        line-height: 36px;
+    }
 `;
 
 const SubHeading = styled.p`
@@ -57,6 +62,13 @@ const SubHeading = styled.p`
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+
+  @media(max-width: 768px){
+
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+  }
 `;
 
 const ImageContent = styled.div`
@@ -83,6 +95,10 @@ const HeroImage = styled.img`
   max-width: 580px;
   animation: ${upDown} 2s ease-in-out infinite alternate-reverse both;
 
+  @media(max-width: 992px){
+    width: 70%;
+  }
+
 `;
 
 const Banner = () => {
@@ -91,7 +107,7 @@ const Banner = () => {
     <Container>
       <MainSection>
         <TextContent>
-          <Heading data-aos="fade-up">Grow your business <br></br>with Akeshya</Heading>
+          <Heading data-aos="fade-up">Grow your business with Akeshya</Heading>
           <SubHeading data-aos="fade-up" data-aos-delay="400">We are team of talented website designers, developers & digital marketeers</SubHeading>
           <NavLink to="/" data-aos="fade-up" data-aos-delay="600">Get Started</NavLink>
         </TextContent>

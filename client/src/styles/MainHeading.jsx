@@ -24,6 +24,10 @@ const MainHeading = styled.h2`
       display: inline-block;
       margin: 0 15px 10px 0;
     }
+
+    @media(max-width: 768px){
+      font-size: 32px;
+    }
 `;
 
 export default MainHeading
