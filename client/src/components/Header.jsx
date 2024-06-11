@@ -126,6 +126,8 @@ const MbBody = styled.div`
     color: #000;
     text-decoration: none;
     font-size: 18px;
+    width: 100%;
+    display: inline-block;
   }
 
   .close-icon {
