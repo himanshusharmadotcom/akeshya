@@ -16,9 +16,29 @@ const LogoParent = styled.div`
 
 const LogoSectionInner = styled.section`
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
+
+  .img-wp{
+    text-align: center;
+    flex-basis: calc((100% - 50px) / 6);
+  }
+
+  @media(max-width: 768px){
+    .img-wp{
+      flex-basis: calc((100% - 20px) / 3);
+    }
+  }
+
+  @media(max-width: 576px){
+    .img-wp{
+      flex-basis: calc((100% - 10px) / 2);
+    }
+  }
+
+
 `;
 
 const Logo = styled.img`
@@ -35,20 +55,32 @@ const Logo = styled.img`
 `;
 
 const LogoSection = () => {
-    return (
-        <LogoParent>
-            <Container>
-                <LogoSectionInner>
-                    <Logo src={client1} alt="Logo 1" data-aos="zoom-in"/>
-                    <Logo src={client2} alt="Logo 2" data-aos="zoom-in" data-aos-delay="100"/>
-                    <Logo src={client3} alt="Logo 3" data-aos="zoom-in" data-aos-delay="200"/>
-                    <Logo src={client4} alt="Logo 4" data-aos="zoom-in" data-aos-delay="300"/>
-                    <Logo src={client5} alt="Logo 5" data-aos="zoom-in" data-aos-delay="400"/>
-                    <Logo src={client6} alt="Logo 5" data-aos="zoom-in" data-aos-delay="500"/>
-                </LogoSectionInner>
-            </Container>
-        </LogoParent>
-    )
+  return (
+    <LogoParent>
+      <Container>
+        <LogoSectionInner>
+          <div className="img-wp">
+            <Logo src={client1} alt="Logo 1" data-aos="zoom-in" />
+          </div>
+          <div className="img-wp">
+            <Logo src={client2} alt="Logo 2" data-aos="zoom-in" data-aos-delay="100" />
+          </div>
+          <div className="img-wp">
+            <Logo src={client3} alt="Logo 3" data-aos="zoom-in" data-aos-delay="200" />
+          </div>
+          <div className="img-wp">
+            <Logo src={client4} alt="Logo 4" data-aos="zoom-in" data-aos-delay="300" />
+          </div>
+          <div className="img-wp">
+            <Logo src={client5} alt="Logo 5" data-aos="zoom-in" data-aos-delay="400" />
+          </div>
+          <div className="img-wp">
+            <Logo src={client6} alt="Logo 6" data-aos="zoom-in" data-aos-delay="500" />
+          </div>
+        </LogoSectionInner>
+      </Container>
+    </LogoParent>
+  )
 }
 
 export default LogoSection
